@@ -337,9 +337,8 @@
     transform: translateY(0px);
 }
 
-.project__description h3,
-.project__description span {
-    color: var(--color-white);
+.project__description h3 {
+    color: var(--color-orange);
 }
 
 .project__description h3::after {
@@ -347,11 +346,15 @@
     display: block;
     position: relative;
     left: 50%;
-    margin-left: -12px;
+    transform:translateX(-50%);
     margin-top: 8px;
-    width: 25px;
+    width: 500px;
     height: 2px;
     background-color:var(--color-dark-white);
+}
+
+.project__description span {
+    color: var(--color-white);
 }
 
 .work__projects a {
@@ -403,8 +406,13 @@
     #navbar {
         flex-direction: column;
         align-items: flex-start;
+        background-color: var(--color-light-green);
     }
     
+    #navbar.navbar--dark {
+        padding: 16px;
+    }
+
     .navbar__menu {
         width: 100%;
     }
@@ -421,6 +429,11 @@
     .navbar__menu,
     .navbar__link {
         display: none;
+    }
+
+    .navbar__menu.open,
+    .navbar__link.open {
+        display: block;
     }
 
     .about__majors {

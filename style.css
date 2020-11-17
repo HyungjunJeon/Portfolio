@@ -5,8 +5,8 @@
     --color-white: #ffffff;
     --color-light-white: #eeeeee;
     --color-dark-white: #bdbdbd;
-    --color-light-green: #57AA70;
-    --color-dark-green: #558b2f;
+    --color-light-green: #51D181;
+    --color-dark-green: #57AA70;
     --color-dark-grey: #4d4d4d;
     --color-grey: #616161;
     --color-light-grey: #7c7979;
@@ -31,6 +31,12 @@
     --size-border-radius: 4px;
   }
   
+  button {
+      background-color: transparent;
+      cursor: pointer;
+      border: none;
+      outline: none;
+  }
   /* Typography */
   
   h1 {
@@ -86,7 +92,7 @@
   #navbar {
       display: flex;
       justify-content: space-between;
-      background-color: var(--color-dark-green);
+      background-color: var(--color-light-green);
       align-items: center;
       color: var(--color-white);
       padding: 16px;
@@ -112,7 +118,7 @@
 }
 
 .navbar__menu__item:hover {
-    background-color: var(--color-light-green);
+    background-color: var(--color-dark-green);
 }
 
 .navbar__link {
@@ -121,4 +127,25 @@
 
 .navbar__link .fa-github {
     color: var(--color-black)
+}
+
+/* Home */
+#home {
+    background: url("imgs/home-background.png") center/cover no-repeat;
+    padding: 40px;
+    text-align: center;
+}
+
+.home__title {
+    color: var(--color-white)
+}
+
+.home__contact {
+    font-size: var(--font-regular);
+    font-weight: var(--weight-bold);
+    color: var(--color-white);
+    margin: 24px;
+    padding: 8px 12px;
+    border: 2px solid var(--color-white);
+    border-radius: var(--size-border-radius);
 }

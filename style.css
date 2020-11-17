@@ -29,6 +29,9 @@
 
     /* Size */
     --size-border-radius: 4px;
+
+    /* Animation */
+    --animation-duration : 300ms;
   }
   
   button {
@@ -148,4 +151,67 @@
     padding: 8px 12px;
     border: 2px solid var(--color-white);
     border-radius: var(--size-border-radius);
+}
+
+/* Section Common */
+.section {
+    padding: 50px;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* About  */
+.about__majors {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+
+.major__icon {
+    width: 170px;
+    height: 170px;
+    font-size: 72px;
+    margin: auto;
+    line-height: 170px;
+    color: var(--color-blue);
+    border: 1px solid var(--color-blue);
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.major__icon i {
+    transition: all var(--animation-duration) ease;
+}
+
+.major__icon:hover i{
+    transform: rotate(30deg) scale(1.1);
+}
+
+.major__title,
+.major__description {
+    color: var(--color-dark-grey);
+}
+
+.major__description {
+    font-size: var(--font-small);
+}
+
+.institution {
+    display: flex;
+    align-items: center;
+}
+
+.institution__name,
+.institution__period {
+    color(var(--color-dark-grey));
+}
+
+.institution__name {
+    font-size: var(--font-small);
+    margin-right: 16px;
+}
+
+.institution__period {
+    font-size: var(--font-micro);
 }

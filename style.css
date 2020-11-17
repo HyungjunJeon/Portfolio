@@ -399,8 +399,13 @@
 }
 
 @media screen and (max-width: 768px) {
-    .navbar__toggle-btn {
-        display: block;
+    :root {
+        /* Font size */
+        --font-lerge: 30px;
+        --font-medium: 18px;
+        --font-regular: 16px;
+        --font-small: 14px;
+        --font-micro: 12px;
     }
 
     #navbar {
@@ -411,6 +416,13 @@
     
     #navbar.navbar--dark {
         padding: 16px;
+    }
+
+    .navbar__toggle-btn {
+        display: block;
+        top: 16px;
+        right: 16px;
+        font-size: var(--font-medium);
     }
 
     .navbar__menu {
@@ -459,5 +471,17 @@
     
     .project__description {
         height: 75%;
+    }
+     .project__description h3::after {
+         width:  300px;
+     }
+
+    .arrow-up {
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+        line-height: 40px;
+        right: 16px;
+        bottom: 16px;
     }
 }

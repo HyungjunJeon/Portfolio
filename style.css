@@ -132,6 +132,14 @@
     color: var(--color-black)
 }
 
+.navbar__toggle-btn {
+    font-size: var(--font-medium);
+    position: absolute;
+    top: 20px;
+    right: 32px;
+    display: none;
+}
+
 /* Home */
 #home {
     background: url("imgs/home-background.png") center/cover no-repeat;
@@ -356,4 +364,58 @@
 
 .Contact__title {
     margin: 32px 0;;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar__toggle-btn {
+        display: block;
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .navbar__menu {
+        width: 100%;
+    }
+
+    .navbar__menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar__link {
+        align-self: center;
+    }
+
+    .navbar__menu,
+    .navbar__link {
+        display: none;
+    }
+
+    .about__majors {
+        flex-direction: column;
+    }
+
+    .major {
+        margin-bottom: 38px;
+    }
+
+    .skillset {
+        flex-direction: column;
+    }
+
+    .work__project {
+        height: 250px;
+        margin-bottom: 38px;
+    }
+
+    .project {
+        flex-grow: 1;
+    }
+    
+    .project__description {
+        height: 75%;
+    }
 }

@@ -107,6 +107,7 @@
 #navbar.navbar--dark {
     background-color: var(--color-light-green);
     padding: 8px;
+    z-index: 1;
 }
 
 .navbar__logo {

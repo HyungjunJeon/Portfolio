@@ -342,3 +342,18 @@
     color: var(--color-black);
     font-size: 27px;
 }
+
+/* Contact */
+#contact {
+    background-color: var(--color-light-green);
+}
+
+.Contact__title,
+.contact__email,
+.contact__rights {
+    color: var(--color-white);
+}
+
+.Contact__title {
+    margin: 32px 0;;
+}

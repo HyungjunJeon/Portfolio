@@ -60,8 +60,13 @@
             </div>
             <div class="major">
                 <div class="major__icon"><i class="fab fa-js-square"></i></div>
-                <h2 class="major__title">JavaScript</h2>
+                <h2 class="major__title">Vanilla JS</h2>
                 <div class="major__description">ES6 이상의 JavaScript를 이용한 아름다운 코드 작성</div>
+            </div>
+            <div class="major">
+                <div class="major__icon"><i class="fab fa-react"></i></div>
+                <h2 class="major__title">React JS</h2>
+                <div class="major__description">Class Component 및 Function Component의 구헌</div>
             </div>
         </div>
         <div class="about__educations">
@@ -104,11 +109,20 @@
                 </div>
                 <div class="skill">
                     <div class="skill__desciription">
-                        <span>JavaScript</span>
+                        <span>Vanilla JS</span>
                         <span>80%</span>
                     </div>
                     <div class="skill__bar">
                         <div class="skill__value" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__desciription">
+                        <span>React JS</span>
+                        <span>50%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 50%;"></div>
                     </div>
                 </div>
             </div>
@@ -123,6 +137,8 @@
                     <h3 class="skillset__title">Etc</h3>
                     <ul class="etc__list">
                         <li><span>Git</span></li>
+                        <li><span>Npm</span></li>
+                        <li><span>Yarn</span></li>
                     </ul>
                 </div>
             </div>
@@ -134,8 +150,13 @@
         <div class="section__container">
             <h1>Projects</h1>
         <h2>My work</h2>
+        <div class="work__categories">
+            <button class="category__btn selected" data-filter="*">All <span class="category__count">3</span></button>
+            <button class="category__btn" data-filter="vanilla-js">Vanilla JS <span class="category__count">2</span></button>
+            <button class="category__btn" data-filter="react-js">React JS <span class="category__count">1</span></button>
+        </div>
         <div class="work__projects">
-            <div class="work__project">
+            <div class="work__project" data-type="vanilla-js">
                 <a href="https://hyungjunjeon.github.io/Online-Shoppingmall-Minigame/" class="project" target="blank">
                     <img src="imgs/projects/Shoppingmall_minigame.PNG" class="project__img" alt="Shoppingmall_minigame" />
                         <div class="project__description">
@@ -145,7 +166,7 @@
                     </a>
                     <a href="https://github.com/HyungjunJeon/Online-Shoppingmall-Minigame" target="blank"><i class="fab fa-github"></i></a>
             </div>
-            <div class="work__project">
+            <div class="work__project" data-type="vanilla-js">
                 <a href="https://hyungjunjeon.github.io/Find-Carrot/" class="project" target="blank">
                     <img src="imgs/projects/FindCarrot.PNG" class="project__img" alt="Find_Carrot" />
                         <div class="project__description">
@@ -154,6 +175,16 @@
                         </div>
                     </a>
                     <a href="https://github.com/HyungjunJeon/Find-Carrot" target="blank"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="work__project" data-type="react-js">
+                <a href="https://hyungjunjeon.github.io/Habit-Tracker/" class="project" target="blank">
+                    <img src="imgs/projects/Habit_Tracker.PNG" class="project__img" alt="Habit_Tracker" />
+                        <div class="project__description">
+                            <h3>Habit Tracker</h3>
+                            <span>이미지 클릭 시 프로젝트가 새탭에서 열립니다</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/HyungjunJeon/Habit-Tracker" target="blank"><i class="fab fa-github"></i></a>
             </div>
         </div>
         </div>

@@ -235,6 +235,10 @@ ul {
   width: 50%;
 }
 
+.about__careers {
+  width: 50%;
+}
+
 .institution {
   display: flex;
   align-items: center;
